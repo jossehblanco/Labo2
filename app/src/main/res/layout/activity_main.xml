@@ -5,133 +5,136 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp"
-    android:orientation="horizontal"
-    tools:context="labo2.labo2.MainActivity"
-    android:gravity="center_horizontal">
+    android:orientation="vertical"
+    tools:context="labo2.labo2.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/Player1Name" />
 
-   <TableLayout
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/Player2Name" />
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
 
-       <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="2"
+            android:textSize="96sp"
+            tools:text="@string/P1SC" />
 
-           <TextView
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="2"
+            android:textSize="96sp"
+            tools:text="@string/P2SC" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimaryDark"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Games:"
+        android:textSize="32sp"
+        />
 
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:inputType="number"
-               android:layout_margin="8dp"
-               android:textSize="32sp"
-               android:textColor="@color/colorAccent"
-               android:text="HOLA"
-               />
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:inputType="number"
-               android:textColor="@color/colorAccent"
-               android:layout_margin="8dp"
-               android:textSize="32sp"
-               android:text="HOLA"
-               />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:inputType="number"
-               android:textColor="@color/colorAccent"
-               android:layout_margin="8dp"
-               android:textSize="32sp"
-               android:text="HOLA"
-               />
-       </TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="6"
+            android:textSize="54sp"
+            tools:text="@string/P1GC" />
 
-       <TableRow>
-           <CheckBox android:enabled="false" android:layout_gravity="center"/>
-           <CheckBox android:enabled="false" android:layout_gravity="center"/>
-           <CheckBox android:enabled="false" android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="4"
+            android:textSize="54sp"
+            tools:text="@string/P2GC" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimaryDark"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sets:"
+        android:textSize="24sp"
+        />
 
-       </TableRow>
-       <TableRow>
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:inputType="number"
-               android:layout_margin="8dp"
-               android:textSize="24sp"
-               android:textColor="@color/colorAccent"
-               android:text="HOLA"
-               />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:inputType="number"
-               android:textColor="@color/colorAccent"
-               android:layout_margin="8dp"
-               android:textSize="24sp"
-               android:text="HOLA"
-               />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="2"
+            android:textSize="32sp"
+            tools:text="@string/P1STC" />
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:inputType="number"
-               android:textColor="@color/colorAccent"
-               android:layout_margin="8dp"
-               android:textSize="24sp"
-               android:text="HOLA"
-               />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="32sp"
+            tools:text="@string/P2STC" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P1"
+            android:layout_weight="2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P2"
+            android:layout_weight="2"/>
+    </LinearLayout>
 
-       </TableRow>
-
-       <TableRow>
-           <CheckBox android:enabled="false" android:layout_gravity="center"/>
-           <CheckBox android:enabled="false" android:layout_gravity="center"/>
-           <CheckBox android:enabled="false" android:layout_gravity="center"/>
-       </TableRow>
-
-       <TableRow>}
-           <LinearLayout android:orientation="vertical">
-
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:inputType="number"
-                   android:layout_margin="8dp"
-                   android:textSize="32sp"
-                   android:textColor="@color/colorAccent"
-                   android:text="HOLA"
-                   />
-           </LinearLayout>
-
-
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:inputType="number"
-               android:textColor="@color/colorAccent"
-               android:layout_margin="8dp"
-               android:textSize="32sp"
-               android:text="HOLA"
-               />
-
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:inputType="number"
-               android:textColor="@color/colorAccent"
-               android:layout_margin="8dp"
-               android:textSize="32sp"
-               android:text="HOLA"
-               />
-
-       </TableRow>
-
-
-
-   </TableLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESET"/>
 
 </LinearLayout>
+
