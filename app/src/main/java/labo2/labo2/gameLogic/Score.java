@@ -5,4 +5,8 @@ package labo2.labo2.gameLogic;
  */
 
 public class Score {
+    private int p1cs = 0, p2cs = 0, p1gc = 0, p2gc = 0, p1stc = 0, p2stc = 0;
+
+
+
 }
