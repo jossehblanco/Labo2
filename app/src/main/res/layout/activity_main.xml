@@ -31,20 +31,22 @@
         android:layout_height="wrap_content" android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/S1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center"
-            android:text="2"
+            android:text="@string/P1SC"
             android:textSize="96sp"
             tools:text="@string/P1SC" />
 
         <TextView
+            android:id="@+id/S2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center"
-            android:text="2"
+            android:text="@string/P2SC"
             android:textSize="96sp"
             tools:text="@string/P2SC" />
     </LinearLayout>
@@ -65,20 +67,22 @@
         android:layout_height="wrap_content" android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/G1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center"
-            android:text="6"
+            android:text="@string/P1GC"
             android:textSize="54sp"
             tools:text="@string/P1GC" />
 
         <TextView
+            android:id="@+id/G2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center"
-            android:text="4"
+            android:text="@string/P2GC"
             android:textSize="54sp"
             tools:text="@string/P2GC" />
     </LinearLayout>
@@ -99,42 +103,58 @@
         android:layout_height="wrap_content" android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/ST1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center"
-            android:text="2"
+            android:text="@string/P1STC"
             android:textSize="32sp"
             tools:text="@string/P1STC" />
 
         <TextView
+            android:id="@+id/ST2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center"
-            android:text="1"
+            android:text="@string/P2STC"
             android:textSize="32sp"
             tools:text="@string/P2STC" />
     </LinearLayout>
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textSize="20sp" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" android:orientation="horizontal">
+
         <Button
+            android:id="@+id/play1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="P1"
-            android:layout_weight="2"/>
+            android:layout_weight="2"
+            android:onClick="btClick1"
+            android:text="P1" />
+
         <Button
+            android:id="@+id/play2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="P2"
-            android:layout_weight="2"/>
+            android:layout_weight="2"
+            android:onClick="btClick2"
+            android:text="P2" />
     </LinearLayout>
 
     <Button
+        android:id="@+id/res"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="RESET"/>
+        android:onClick="btnClick3"
+        android:text="RESET" />
 
 </LinearLayout>
-
